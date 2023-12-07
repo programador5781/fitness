@@ -1,0 +1,26 @@
+.navBar {
+    position: absolute; /* Establece un posicionamiento absoluto */
+    top: 20px; /* Puedes ajustar el valor superior según sea necesario */
+    left: 20px; /* Espacio en el margen derecho */
+    display: flex;
+    z-index: 10; /* Z-index mayor al fondo del Home */
+    background-color: transparent; /* Fondo transparente */
+}
+
+.navList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navList li {
+    margin-right: 15px; /* Espaciado entre elementos */
+}
+
+.navLink {
+    text-decoration: none;
+    color: #e15825; /* Color del texto naranja */
+    font-size: 20px;
+}
+

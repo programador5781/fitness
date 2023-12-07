@@ -1,0 +1,16 @@
+body {
+    margin: 0;    
+}
+
+.container_Home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./bgHomeNoLogo.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
