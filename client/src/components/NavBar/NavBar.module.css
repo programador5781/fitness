@@ -1,10 +1,12 @@
 .navBar {
     position: absolute; /* Establece un posicionamiento absoluto */
-    top: 20px; /* Puedes ajustar el valor superior según sea necesario */
-    left: 20px; /* Espacio en el margen derecho */
+    top: 30px; /* Puedes ajustar el valor superior según sea necesario */
+    left: 30px; /* Espacio en el margen derecho */
     display: flex;
     z-index: 10; /* Z-index mayor al fondo del Home */
     background-color: transparent; /* Fondo transparente */
+    font-family: unbounded;
+    font-weight: 100;
 }
 
 .navList {
@@ -20,7 +22,19 @@
 
 .navLink {
     text-decoration: none;
-    color: #e15825; /* Color del texto naranja */
+    color: #f7f4f3; /* Color del texto naranja */
     font-size: 20px;
+}
+
+.active {
+    color: #ff581b;
+    font-weight: bold;
+}
+
+/*Hace cambiar la NavBar de color cuando hacemos scroll NIY*/
+.scrolled {
+    /* Agrega aquí tus estilos para la barra de navegación desplazada */
+    background-color: #fff; /* Por ejemplo, cambia el color de fondo al desplazarse */
+    /* ... */
 }
 

@@ -1,16 +1,447 @@
 body {
-    margin: 0;    
+    /* font-family: unbounded; */
+    font-family: "Inter", sans-serif;
 }
 
-.container_Home {
-    position: relative;
-    height: 100vh;
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+    padding: 0px;
+}
+
+.backgroundContainer {
+    background-image: url("./bgHomeNoLogo2.png");
+    background-size: cover;
+    background-position-y: 50%;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 100%;
+    /* object-fit: contain; */
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    color: white;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 630px;
+}
+
+.texto_uno,
+.texto_dos {
+    text-align: left;
+    font-size: 44px;
+    line-height: 1.5;
+    margin-left: 80px;
+    padding: 0;
+
+}
+
+.texto_uno {
+    margin-top: 110px;
+    margin-bottom: 0;
+}
+
+.texto_dos {
+    margin-top: 1px;
+    color: #ff581b;
+    font-weight: bold;
+}
+
+.texto_tres {
+    /* margin-top: 125px; */
+    margin-left: 80px;
+    font-size: 16px;
+}
+
+.btn_home {
+    background-color: #ffaf1b;
+    color: #0f0f0f;
+    font-size: small;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 8px rgba(228, 150, 33, 0.479);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    cursor: pointer;
+    max-width: 150px;
+    margin-left: 80px;
+    margin-bottom: 50px;
+}
+
+.btn_home:hover {
+    background-color: #ff581b;
+    color: rgb(250, 244, 244);
+}
+
+.secondaryContent {
+    color: #363635;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.texto_cuatro {
+    text-align: center;
+    font-size: 40px;
+}
+
+.img_1 {
+    width: 15%;
+    height: auto;
+    margin-left: 40px;
+    border-radius: 50%;
+}
+
+.texto_cinco {
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+/*Estilos adicionales*/
+/* Estilos para el contenedor del título */
+.contenedor_titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las casillas */
+.contenedor_casillas {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    /* Espacio entre las casillas */
+}
+
+.casilla {
+    width: calc(25% - 20px);
+    /* Ancho del 25% para cada casilla con 20px de margen total (10px a cada lado) */
+    border: 1px solid #ccc;
+    padding: 20px;
+    /* Espacio dentro de cada casilla */
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    /* Espacio entre las casillas */
+}
+
+.casilla img {
+    width: 140px;
+    /* Ajusta el tamaño de las imágenes */
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 0;
+}
+
+.casilla h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.casilla p {
+    font-size: 14px;
+}
+
+/*Estilos thirdContainer*/
+.thirdContainer {
+    position: relative;
+    align-items: center;
+    /* margin-bottom: 20px; */
+}
+
+.imgContainer {
+    position: relative;
+    display: inline-block;
+    /* margin: 20px auto; */
+    /* margin-bottom: 20px; */
+}
+
+.img_5 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlayText {
+    position: absolute;
+    top: 240px;
+    /* Ajusta la posición verticalmente */
+    right: 20px;
+    left: 20px;
+    /* Ajusta la posición horizontalmente */
+
+    font-size: 20px;
+    font-weight: 200;
+    text-align: center;
+    color: white;
+    /* Color del texto */
+
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fondo semitransparente */
+    padding: 10px;
+    /* Espaciado interno */
+    z-index: 1;
+    /* Asegura que el texto esté sobre la imagen */
+    max-width: 100%;
+    /* Ancho máximo para evitar que se extienda demasiado */
+}
+
+.btn_adquirir {
+    position: absolute;
+    bottom: 80px;
+    /* Posición vertical del botón, ajusta según sea necesario */
+    left: 45%;
+    /* Centra horizontalmente el botón */
+    /* transform: translateX(-50%); */
+    /* Ajusta el centrado horizontal */
+    padding: 10px 20px;
+    background-color: #ff581bee;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn_adquirir:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 88, 27, 0.7);
+    /* Sombra al hacer hover */
+}
+
+.btn_adquirir:active {
+    transform: scale(1);
+    box-shadow: none;
+    /* Elimina la sombra al hacer clic */
+}
+
+/*Estilos contenedor__img__rc*/
+.contenedor__img__rc {
+    width: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("./bgHomeNoLogo.jpg");
-    background-size: cover;
-    background-position: center;
-    margin: 0;
+    margin-top: 100px;
 }
+
+.contenedor__img__rc figure {
+    position: relative;
+    height: 240px;
+    width: 190px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.50);
+    cursor: pointer;
+    object-fit: cover;
+    margin: 5px 15px 85px 15px;
+    /*Espaciado del footer 85px*/
+}
+
+.contenedor__img__rc figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.contenedor__img__rc figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #ff581b60;
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.contenedor__img__rc figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor__img__rc figure:hover>.capa h3 {
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+
+.contenedor__img__rc figure:hover>img {
+    transform: scale(1.3);
+}
+
+.contenedor__img__rc figure .capa h3 {
+    color: #fff;
+    font-weight: 100;
+    margin-bottom: 190px;
+    transition: all 500ms ease-out;
+    margin-top: 10px;
+
+}
+
+.contenedor__img__rc figure p {
+    color: #fff;
+    font-size: 12px;
+    line-height: 1.5;
+    width: 100%;
+    height: 220%;
+    margin: auto;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 360px) {
+
+    .contenedor__img__rc {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contenedor__img__rc figure {
+        height: 320px;
+        width: 270px;
+    }
+
+    .contenedor__img__rc figure p {
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.5;
+        width: 80%;
+        height: 200%;
+        margin: auto;
+    }
+
+    .contenedor__img__rc figure h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 480px) {
+
+    .contenedor__img__rc {
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 760px) {
+
+    .contenedor__img__rc {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .contenedor__img__rc figure {
+        height: 200px;
+        width: 150px;
+    }
+
+    .contenedor__img__rc figure h3 {
+        font-size: 14px;
+    }
+
+    .contenedor__img__rc figure p {
+        color: #fff;
+        font-size: 8.9px;
+        line-height: 1.5;
+        width: 80%;
+        height: 200%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor__img__rc {
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .contenedor__img__rc figure {
+        height: 300px;
+        width: 250px;
+    }
+
+    .contenedor__img__rc figure h3 {
+        font-size: 16.8px;
+    }
+
+    .contenedor__img__rc figure p {
+        color: #fff;
+        font-size: 12px;
+        line-height: 1.5;
+        width: 80%;
+        height: 200%;
+        margin: auto;
+    }
+}
+
+
+
+/* Estilo para el botón flotante */
+.scrollToTop {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    background-color: #ff581bce;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 999;
+
+    animation: fadeInOut 1s forwards;
+    /* Agrega una animación de entrada/salida */
+    /* Oculta el botón al inicio */
+    opacity: 0;
+}
+
+
+/* Animación de entrada/salida */
+@keyframes fadeInOut {
+    0% {
+      opacity: 0; /* Inicio de la animación: completamente transparente */
+      bottom: -50px; /* También puedes establecer la posición inicial aquí */
+    }
+    100% {
+      opacity: 1; /* Final de la animación: completamente visible */
+      bottom: 90px; /* Posición final */
+    }
+  }
+  
+
+  @keyframes fadeOut {
+    0% {
+      opacity: 1; /* Inicio de la animación: completamente visible */
+      bottom: 90px; /* Posición inicial */
+    }
+    100% {
+      opacity: 0; /* Final de la animación de salida: completamente transparente */
+      bottom: -50px; /* Posición final */
+    }
+  }

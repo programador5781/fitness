@@ -1,0 +1,42 @@
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .slide img {
+    width: 50%;
+    height: auto;
+  }
+  
+  .prevButton,
+  .nextButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+  }
+  
+  .prevButton {
+    left: 10px;
+  }
+  
+  .nextButton {
+    right: 10px;
+  }
+  

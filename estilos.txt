@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+}
+
+/*Estilos contenedor principal*/
+.container_Home {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./bgHomeNoLogo.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+
+/*Estilos logo*/
+.logo {
+    width: 150px;
+    /* Tamaño deseado del logo */
+    height: auto;
+    /* Mantener la proporción */
+    position: absolute;
+    /* Posición absoluta para ubicar el logo */
+    top: 10px;
+    /* Distancia desde la parte superior */
+    left: 60%;
+    /* Ajuste horizontal al centro */
+    transform: translateX(-50%);
+    /* Centrar horizontalmente */
+}
+
+/*Estilos texto uno*/
+.texto_uno {
+    color: white;
+    padding: 5px 0;
+    /* Ajustar el espacio entre el primer párrafo y el segundo */
+    text-align: left;
+    /* Alinear a la izquierda */
+    margin: 0;
+    /* Eliminar el margen predeterminado del párrafo */
+    position: absolute;
+    left: 80px;
+    top: 40%;
+    font-size: 33px;
+    font-family: unbounded;
+}
+
+/*Estilos texto dos*/
+.texto_dos {
+    color: #ff581b;
+    padding: 5px 0;
+    /* Ajustar el espacio entre el segundo párrafo y otros elementos */
+    text-align: left;
+    /* Alinear a la izquierda */
+    margin: 0;
+    /* Eliminar el margen predeterminado del párrafo */
+    position: absolute;
+    left: 80px;
+    top: 52%;
+    font-size: 33px;
+    font-weight: bold;
+    font-family: unbounded;
+
+}
+
+/*Estilos texto tres*/
+.texto_tres {
+    color: #fcf8f6;
+    padding: 5px 0;
+    /* Ajustar el espacio entre el segundo párrafo y otros elementos */
+    text-align: left;
+    /* Alinear a la izquierda */
+    margin: 0;
+    /* Eliminar el margen predeterminado del párrafo */
+    position: absolute;
+    left: 80px;
+    top: 72%;
+    font-size: 16px;
+    font-weight: normal;
+    font-family: unbounded;
+}
+
+/*Estilos botón home*/
+.btn_home {
+    position: absolute;
+    top: 86%;
+    left: 80px;
+    background-color: #ffaf1b;
+    color: #0f0f0f;
+    font-family: unbounded;
+    font-size: medium;
+    /* Ajusta el tamaño del texto */
+    border-radius: 8px;
+    /* Incrementa el radio del borde */
+    padding: 12px 24px;
+    /* Aumenta el relleno */
+    box-shadow: 0px 4px 8px rgba(75, 74, 74, 0.2);
+    /* Agrega una suave sombra */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.5s ease, color 0.5s ease;
+    /* Añade una transición suave al botón */
+
+    /* Si prefieres centrar el texto horizontalmente */
+    /* text-align: center; */
+}
+
+/*Estilos botón al pasar el puntero*/
+.btn_home:hover {
+    /* Si deseas cambiar el color del texto al pasar el mouse */
+    background-color: #ff581b;
+    color: rgb(250, 244, 244);
+    cursor: pointer;
+}
+
+/*Estilos texto cuatro*/
+.texto_cuatro {
+    position: relative;
+    top:270%;
+    color: #363635;
+    font-size: 40px;
+    font-family: unbounded;
+    font-weight: bold;
+}
+.texto_cinco {
+    position: relative;
+    top:275%;
+    color: #363635;
+    font-size: 20px;
+    font-family: unbounded;
+}

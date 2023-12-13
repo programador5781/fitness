@@ -16,3 +16,90 @@ body {
     background-position: center;
     margin: 0;    
 }
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    width: 140px; /* Cambia este valor al tamaño deseado */
+    height: auto; /* Mantener la proporción de la imagen */
+}
+
+.circle {
+    position: absolute;
+    top: 0.001px;
+    left: 45px;
+    width: 1090px; 
+    height: auto; 
+}
+
+.orangeX {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 1090px; 
+    height: auto; 
+}
+
+.title {
+    color: aliceblue;
+    font-family: unbounded;
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute; /* Añadido para ajustar la posición */
+    left: 80px; /* Ajustar la distancia desde el borde izquierdo */
+    top: 35%; /* Opcional: si necesitas ajustar la posición vertical */
+    transform: translateY(-50%); /* Opcional: si utilizas top */
+}
+
+.parrafo {
+    color: aliceblue;
+    font-family: unbounded;
+    font-size: 15px;
+    position: absolute;
+    left: 80px;
+    top: 60%;
+    transform: translateY(-50%);
+}
+
+
+.btn {
+    background-color: #ff581bc9;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    /* Transición suave para transformación, sombra, color de fondo y texto */
+
+    position: absolute;
+    top: calc(60% + 80px);
+    left: 80px;
+    width: 180px;
+
+    font-family: unbounded;
+    font-weight: bold;
+    font-size: 15px;
+
+    /* Sombra inicial suave */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+    overflow: hidden;
+    animation: shadow-pulse 2s infinite;
+}
+
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(255, 88, 27, 0.6); /* Cambia el color según lo necesites */
+    }
+    100% {
+        box-shadow: 0 0 0 30px rgba(255, 88, 27, 0); /* Cambia el color y el ancho de la sombra según lo necesites */
+    }
+}
+.btn:hover {
+    color: white; 
+    background-color: #ff581b;
+    transform: translateY(-3px) scale(1.05); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}

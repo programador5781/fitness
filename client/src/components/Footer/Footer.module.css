@@ -1,0 +1,39 @@
+.footer {
+    background-color: #ff581b;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .socialIcons a {
+    color: #f3cd01;
+    font-size: 24px;
+    margin-right: 10px;
+  }
+  
+  .socialIcons a:hover {
+    color: #fff;
+  }
+  
+  .designBy {
+    font-size: 14px;
+  }
+  
+  .designBy a {
+    color: #f3cd01;
+    text-decoration: none;
+  }
+  
+  .designBy a:hover {
+    text-decoration: underline;
+    color: #fff;
+  }
+  
+
+  .gymName {
+    font-family: unbounded;
+    font-size: 30px;
+    font-weight: bold;
+}
